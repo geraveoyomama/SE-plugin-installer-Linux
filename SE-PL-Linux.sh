@@ -3,8 +3,8 @@ if [[ $1 ]]; then
   gamepath=$1
 else
   read -p "where is your Space Engineers game folder?: " gamepath
-  cd $gamepath/Bin64
 fi
+cd $gamepath/Bin64
 echo "Using, $PWD"
 wget https://gist.githubusercontent.com/opekope2/e02db7e526dadff0813a6ea2aebf820b/raw/SpaceEngineersLauncher.py -O SpaceEngineersLauncher.py
 echo "Opekope's script downloaded!"
